@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal</title>
+    <link rel="stylesheet" href="goal.css">
+</head>
+<body>
+  <h1>What is your goal?</h1>
+  <p>This information lets us suggest meals to help you reach your goal.</p>
+
+  <div class="setGoal">
+  <p class="par">Set a goal</p>
+        <ul >
+            <li >
+                <label >
+                    <input type="radio" class="rad" name="goal" value="General Goal"> 
+                    General Goal
+                </label> 
+            </li>
+            <li >
+                <label >
+                <input type="radio" class="rad" name="goal" value="Exact Goal"> 
+                <span>Exact Goal</span>
+            </label> 
+        </li>
+        </ul>
+        </div>
+        <hr>
+        <div class="generalGoal">
+            <p class="par">I want to</p>
+        <a href="javascript:void(0);" id="toggle-section"> 
+            <img src="./imgs/Question_mark-removebg-preview.png" alt="" class="ques-logo">
+            </a>
+            
+
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" class="radi" name="goal-type">
+                            Lose fat
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="radi" name="goal-type">
+                            <span>Maintain weight</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="radi" name="goal-type">
+                            <span>Build muscle</span>
+                        </label>
+                    </li>
+                </ul>
+        </div>
+        <div class="exactGoal">
+            <div class="exD">
+                <p class="dp">Your weight goal</p>
+                    <input type="number" name="" id="numW" class="nmW"> Kg
+            </div>
+            <hr>
+                <div class="exD">
+                    <p class="dp">Target weight change</p>
+                        <input type="number" name="" id="numW" class="nmW" step="0.1" min="0.1" max="0.9"> kg a week 
+
+                </div>
+                <p class="warnP">The CDC and health professionals strongly advise against weight changes of more than 0.9 kg a week.</p>
+        </div>
+        <p id="hidden-paragraph" style="display: none;">The calorie target we suggest will be based on your goals. If you select "Lose fat",<br> the
+             target will be 20% below your maintenance calories, or if you select "Build muscle", the target calories will be 15% above maintenance.</p>
+            <a href="./profile.html" class="rounded-button">
+                <img src="./imgs/whiteRightArr-removebg-preview.png" alt="Continue Logo" class="continue-logo">
+                Continue
+            </a>
+
+</body>
+<script src="goal.js"></script>
+</html>

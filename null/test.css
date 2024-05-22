@@ -1,0 +1,49 @@
+/* Style form */
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Style button */
+
+.continue-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.continue-btn:hover {
+    background: #0062cc;
+}
+
+/* Overall page styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}

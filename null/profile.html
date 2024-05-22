@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <h1>Tell us about yourself</h1>
+    <p >This information lets us estimate your nutrition requirements for each day.</p>
+
+            <div class="sex">
+            <div class="fqd">
+                <div class="left">
+                    <p class="par">Sex</p>
+                </div>
+                <div class="right">
+                    <a href="javascript:void(0);" id="toggle-section-sex">
+                        <img src="./imgs/Question_mark-removebg-preview.png" alt="" class="ques-logo">
+                    </a>
+                </div>
+            </div>
+
+            
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" id="sex" class="rad" name="sex">
+                            Male
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" id="sex" class="rad" name="sex">
+                            <span>Female</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" class="rad" name="sex">
+                            <span>Non-Binary</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <p id="hidden-paragraph-sex" style="display: none;">We use the Harris-Benedict equation for energy expenditure, and your
+                chosen sex <br> will impact your suggested calorie
+                intake. For non-binary, we take the average <br> between the male and female calorie values -- this is an imperfect
+                solution,
+                but you <br> can freely change your calorie targets at any time.</p>
+    <hr>
+
+                <div class="exD">
+                    <p  class="dp">Height</p>
+                    <input type="number" name="" id="height" class="nmW">  cm
+                </div>
+    <hr>
+
+                <div class="exD">
+                    <p class="dp">Weight</p>
+                    <input type="number" name="" id="weight" class="nmW"> Kg
+                </div>
+    <hr>
+
+                <div class="exD">
+                    <p class="dp">Age</p>
+                    <input type="number" name="" id="age" class="nmWu"> Years
+                </div>
+    <hr>
+
+                <div class="fats">
+                    <div class="fqd">
+                        <div class="left">
+                            <p class="par">Bodyfat</p>
+                        </div>
+                        <div class="right">
+                            <a href="javascript:void(0);" id="toggle-section-fats">
+                                <img src="./imgs/Question_mark-removebg-preview.png" alt="" class="ques-logo">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" class="radi" name="fat-type">
+                                Low
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="radi" name="fat-type">
+                                <span>Medium</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" class="radi" name="fat-type">
+                                <span>High</span>
+                            </label>
+                        </li>
+                    </ul>
+                    
+                </div>
+                        <p id="hidden-paragraph-fats" style="display: none;">Body fat percentage is the total mass of fat divided by total body
+                            mass. The typical bodyfat percentage is 18-24% <br> for an
+                            average male and 25-31% for an average female according to wikipedia.
+                        
+                            If you don't know yours it's not a <br> big deal - we only use it to estimate your lean body mass and change the minimum
+                            amount of protein <br> recommended in the nutrition calculator.</p>
+
+    <hr>
+    <div class="exD">
+    <p class="par">Activity Level</p>
+    <select name="" id="opti">
+        <option value="1.2">Desk job, light exercise</option>
+        <option value="1.375">Lightly active, workout 3-4 times/week</option>        
+        <option value="1.55">Active daily, frequent exercise</option>
+        <option value="1.725">Very Athletic</option>        
+        <option value="1.9">Extremely Athletic</option>
+    </select>
+</div>
+
+
+            <a href="./nutrition.html" class="rounded-button">
+                <img src="./imgs/whiteRightArr-removebg-preview.png" alt="Continue Logo" class="continue-logo">
+                Continue
+            </a>
+<script src="profile.js"></script>
+</body>
+</html>
